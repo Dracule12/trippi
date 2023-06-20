@@ -1,0 +1,74 @@
+ <!DOCTYPE html> 
+    <html lang="en"> 
+         <head>  
+            <meta charset="UTF-8"> 
+            <title>For You</title> 
+            <style>
+
+                html{
+                    background-color: bisque;
+                }
+                
+                img{
+                    display: none;
+                    width: 400px;
+                  
+                    
+                }
+                button{
+                    width: 200px;
+                    height: 100px;
+                    font-size: 30px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    border-radius: 30px;
+                    border-color: aquamarine;
+                    border-width: 5px;
+                }
+                button:hover{
+                    background-color: rgb(163, 228, 206)
+
+                
+                }
+                h1{
+                    font-size: 50px;
+                    margin-top: 150px;
+                }
+            </style>
+        </head>
+ 
+         <body> 
+            
+         <center><h1>Anong chord ang Namatay at nabuhay muli?</h1>
+             <button onclick="myfunction()" onclick="show()" onclick="play()" id="button">Click Me</button> <br> <br> 
+              <span id="res" style="color:rgb(20, 20, 20);
+                   font-weight:bold; font-size: 50px; "><h1></h1></span> </center>
+        <center><img id="img" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/355561910_989224622217667_6320045460112130907_n.png?_nc_cat=109&cb=99be929b-3346023f&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeGLbtX-F5j-o9j06bNUzXM_YPpwhSdk4mpg-nCFJ2Tiak4gpSMDHLxi6T6dt8ulb66W3TFNloCmrU_FhRp3JmB_&_nc_ohc=lM9QsUyp0n0AX9JnyGe&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSsOCN9GnEvRA5kFZmZokIXm8qibv6EUjxfNdWqwg-XyA&oe=64B8E7C9"></center>
+<center><img id="img1" src="https://gifdb.com/images/high/dancing-jesus-playing-guitar-rock-heaven-40spu9g1zpswx6e5.webp"></center>
+       
+        <audio id="audio" src="Amen.mp3"></audio>
+    <script> 
+        function myfunction(){
+    document.getElementById('res').innerHTML="Edi Gsus;"
+        
+    var audio = document.getElementById("audio");
+        audio.play();
+        audio.loop = true;
+
+            document.getElementById('img')
+                    .style.display = "block";
+            
+             document.getElementById('button')
+                    .style.display = "none";
+
+                    document.getElementById('img1')
+                    .style.display = "block";
+            
+             document.getElementById('button')
+                    .style.display = "none";
+        }
+    
+     </script>
+
+     </body>
+    </html>
